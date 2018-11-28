@@ -16,6 +16,21 @@ var CablesDePruebaCount = 0;
       Cautin.value = CautinCount;
       Fuente = document.getElementById("Fuente");
       Fuente.value = FuenteCount;
+      Multimetro = document.getElementById("Multimetro");
+      Multimetro.value = MultimetroCount;
+      Osciloscopio = document.getElementById("Osciloscopio");
+      Osciloscopio.value = OsciloscopioCount;
+      Protoboard = document.getElementById("Protoboard");
+      Protoboard.value = ProtoboardCount;
+      Transformador = document.getElementById("Transformador");
+      Transformador.value = TransformadorCount;
+      Veliz = document.getElementById("Veliz");
+      Veliz.value = VelizCount;
+      
+      
+
+      
+
 
     
 
@@ -74,4 +89,63 @@ var CablesDePruebaCount = 0;
                 Fuente.value = FuenteCount;
               }
           }
+
+
+          function MultimetroAdd(){
+            MultimetroCount =MultimetroCount+1;
+            Multimetro.value = MultimetroCount;
+            }
+            function MultimetroRemove(){
+                if(MultimetroCount > 0){
+                  MultimetroCount =MultimetroCount-1;
+                  Multimetro.value = MultimetroCount;
+                }
+            }
+
+
+            function OsciloscopioAdd(){
+              OsciloscopioCount =OsciloscopioCount+1;
+              Osciloscopio.value = OsciloscopioCount;
+              }
+              function OsciloscopioRemove(){
+                  if(OsciloscopioCount > 0){
+                    OsciloscopioCount =OsciloscopioCount-1;
+                    Osciloscopio.value = OsciloscopioCount;
+                  }
+              }
       
+              function ProtoboardAdd(){
+                ProtoboardCount =ProtoboardCount+1;
+                Protoboard.value = ProtoboardCount;
+                }
+                function ProtoboardRemove(){
+                    if(ProtoboardCount > 0){
+                      ProtoboardCount =ProtoboardCount-1;
+                      Protoboard.value = ProtoboardCount;
+                    }
+                }
+
+
+                function TransformadorAdd(){
+                  TransformadorCount =TransformadorCount+1;
+                  Transformador.value = TransformadorCount;
+                  }
+                  function TransformadorRemove(){
+                      if(TransformadorCount > 0){
+                        TransformadorCount =TransformadorCount-1;
+                        Transformador.value = TransformadorCount;
+                      }
+                  }
+
+
+
+                  function VelizAdd(){
+                    VelizCount =VelizCount+1;
+                    Veliz.value = VelizCount;
+                    }
+                    function VelizRemove(){
+                        if(VelizCount > 0){
+                          VelizCount =VelizCount-1;
+                          Veliz.value = VelizCount;
+                        }
+                    }
