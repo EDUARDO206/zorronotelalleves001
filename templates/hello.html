@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Zorro no te la lleves
+      </h1>
+      <p class="subtitle">
+        Inventario de componentes
+      </p>
+
+      <div>
+          <button class="button is-primary">Guardar</button>
+      </div>
+      <!-- informacion -->
+      <table class="table">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Objetos</th>
+                    <th>Total</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="../static/images/CablesDePrueba.png" alt="CablesDePrueba"></td>
+                    <td>CablesDePrueba</td>
+                    <td>
+                        <input id="CablesDePrueba" type="text" value="10">
+                    </td>
+                    <td>
+                        <button onclick="CablesDePruebaAdd()" class="button is-success">Agregar</button>
+                    </td>
+                    <td>
+                        <button onclick="CablesDePruebaRemove()" class="button is-danger">Disminuir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../static/images/Caimanes.png" alt="Caimanes"></td>
+                    <td>Caimanes</td>
+                    <td>
+                        <input id="Caimanes" type="text" value="0">
+                    </td>
+                    <td>
+                        <button  onclick="CaimanesCountAdd()" class="button is-success">Agregar</button>
+                    </td>
+                    <td>
+                        <button onclick="CaimanesCountRemove()" class="button is-danger">Disminuir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../static/images/Cautin.png" alt="Cautin"></td>
+                    <td>Cautin</td>
+                    <td>10</td>
+                    <td>
+                        <button class="button is-success">Agregar</button>
+                    </td>
+                    <td>
+                        <button class="button is-danger">Disminuir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../static/images/Fuente.png" alt="Fuente"></td>
+                    <td>Fuente</td>
+                    <td>10</td>
+                    <td>
+                        <button class="button is-success">Agregar</button>
+                    </td>
+                    <td>
+                        <button class="button is-danger">Disminuir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../static/images/Multimetro.png" alt="Multimetro"></td>
+                    <td>Multimetro</td>
+                    <td>10</td>
+                    <td>
+                        <button class="button is-success">Agregar</button>
+                    </td>
+                    <td>
+                        <button class="button is-danger">Disminuir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../static/images/Osciloscopio.png" alt="Osciloscopio"></td>
+                    <td>Osciloscopio</td>
+                    <td>10</td>
+                    <td>
+                        <button class="button is-success">Agregar</button>
+                    </td>
+                    <td>
+                        <button class="button is-danger">Disminuir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../static/images/Protoboard.png" alt="Protoboard"></td>
+                    <td>Protoboard</td>
+                    <td>10</td>
+                    <td>
+                        <button class="button is-success">Agregar</button>
+                    </td>
+                    <td>
+                        <button class="button is-danger">Disminuir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../static/images/Transformador.png" alt="Transformador"></td>
+                    <td>Transformador</td>
+                    <td>10</td>
+                    <td>
+                        <button class="button is-success">Agregar</button>
+                    </td>
+                    <td>
+                        <button class="button is-danger">Disminuir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../static/images/Veliz.png" alt="Veliz"></td>
+                    <td>Veliz</td>
+                    <td>10</td>
+                    <td>
+                        <button class="button is-success">Agregar</button>
+                    </td>
+                    <td>
+                        <button class="button is-danger">Disminuir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </section>
+  <script src="../static/scripts/hello.js"></script>
+  </body>
+</html>
