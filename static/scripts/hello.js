@@ -12,10 +12,16 @@ var CablesDePruebaCount = 0;
       CablesDePrueba.value = CablesDePruebaCount;
       Caimanes = document.getElementById("Caimanes");
       Caimanes.value = CaimanesCount;
+      Cautin = document.getElementById("Cautin");
+      Cautin.value = CautinCount;
+      Fuente = document.getElementById("Fuente");
+      Fuente.value = FuenteCount;
 
     
 
-
+    /**
+     * CablesDePrueba
+     */
       function CablesDePruebaAdd(){
           CablesDePruebaCount =CablesDePruebaCount+1;
           CablesDePrueba.value = CablesDePruebaCount;
@@ -27,13 +33,45 @@ var CablesDePruebaCount = 0;
           }
       }
 
-      function CaimanesCountAdd(){
-          CaimanesCount =CaimanesCount+1;
-          Caimanes.value = CaimanesCount;
+/**
+     * Caimanes
+     */
+
+    function CaimanesAdd(){
+      CaimanesCount =CaimanesCount+1;
+      Caimanes.value = CaimanesCount;
       }
-      function CaimanesCountRemove(){
-        if(CaimanesCount > 0){
-          CaimanesCount =CaimanesCount-1;
-          Caimanes.value = CaimanesCount;
+      function CaimanesRemove(){
+          if(CaimanesCount > 0){
+            CaimanesCount =CaimanesCount-1;
+            Caimanes.value = CaimanesCount;
+          }
+      }
+
+
+      function CautinAdd(){
+        CautinCount =CautinCount+1;
+        Cautin.value = CautinCount;
         }
-      }
+        function CautinRemove(){
+            if(CautinCount > 0){
+              CautinCount =CautinCount-1;
+              Cautin.value = CautinCount;
+            }
+        }
+
+
+
+
+
+        function FuenteAdd(){
+          FuenteCount =FuenteCount+1;
+          Fuente.value = FuenteCount;
+          }
+          function FuenteRemove(){
+              if(FuenteCount > 0){
+                FuenteCount =FuenteCount-1;
+                Fuente.value = FuenteCount;
+              }
+          }
+      
